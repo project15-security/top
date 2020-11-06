@@ -1,0 +1,421 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ffffcc; /*サイトの背景*/
+  /*background: #ddeeda;*/ /*元の色*/
+  font-size: 20px;
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+
+.site-header{
+	top:0px;
+  background: #fff;
+  display: flex;
+  padding: 20px 20px;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99;
+}
+
+
+
+.btn00 {
+  margin-top: 24px;
+  margin-left: 16px;
+  position: relative;
+  display: inline-block;
+  color: #0033CC;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-heigt: 1.2em;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.btn00:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn00::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #0033CC;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+
+.btn00:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.site-logo img{
+  height: 50px;
+  width:auto;
+}
+
+.title{
+	/*text-decoration: underline;
+	text-decoration-color:#FF6600;*/
+	position: relative; top: 10px;
+	padding-left: 80px;
+	font-size: 200%;
+	font-weight: bolder;
+	color: red;
+}
+
+/*前書き*/
+.maegaki{
+	padding-top:10px;
+  position: relative; top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 28px;
+}
+
+#menu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#menu li{
+display: inline;
+padding: 0;
+margin: 0;
+}
+/*左側のメニュー*/
+#menu li a{
+display: block;
+position:relative;
+width: 607px;
+height: 150px;
+padding: 35px;
+margin: 20px 60px 20px 60px;
+text-decoration: none;
+border: outset 3px #CCFFFF;
+background-color: #CCFFFF;
+text-align: center;
+vertical-align: middle;
+color: #000000;
+font-size: 18px;
+}
+
+#menu li a:hover{
+border: inset 3px #CCFFFF;
+background-color: #CCFFFF;
+}
+
+#menu2 ul{
+	/*
+margin: -480px 0px 0px 500px;
+*/
+margin: -680px 0px 0px 500px;
+padding: 0;
+list-style-type: none;
+}
+
+#menu2 li{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+/*右側のメニュー*/
+#menu2 li a{
+display: block;
+width: 607px;
+height: 150px;
+padding: 35px;
+margin: 20px 180px 20px 180px;
+text-decoration: none;
+border: outset 3px #CCFFFF;
+background-color: #CCFFFF;
+text-align: center;
+vertical-align: middle;
+color: #000000;
+font-size: 18px;
+}
+
+#menu2 li a:hover{
+border: inset 3px #CCFFFF;
+background-color: #CCFFFF;
+}
+
+/*クイズサイトへのボタン*/
+#menu3 li a{
+	display: block;
+	position: relative;
+	width: 607px;
+	height: 150px;
+	padding: 35px;
+	margin: auto;
+	text-decoration: none;
+	border: outset 3px #CCFFFF;
+	background-color: #CCFFFF;
+	text-align: center;
+	vertical-align: middle;
+	color: #000000;
+	font-size: 25px;
+}
+
+#menu3 li a:hover{
+border: inset 3px #CCFFFF;
+background-color: #CCFFFF;
+}
+
+.pp{
+	position: relative; top: 40px;
+}
+
+.gnav__menu{
+  display: flex;
+}
+
+.gnav__menu__item{
+  margin-left: 20px;
+}
+
+.gnav__menu__item a{
+  color: #333;
+  text-decoration: none;
+}
+.gnav__menu__item  :hover{
+  background: #333:
+}
+.hero{
+  max-height: 380px;
+  overflow: hidden;
+}
+
+.hero img{
+  height: auto;
+  width: 100%;
+}
+
+.content{
+  line-height: 1.6;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 800px;
+}
+
+.content p{
+  margin-bottom: 40px;
+
+}
+
+.site-footer{
+  background: #333;
+  padding: 40px;
+}
+
+
+
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f98;
+  opacity: 0.6;
+}
+
+/*
+#page_top{
+  width: 100px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #ef3f98;
+  opacity: 0.6;
+}
+*/
+#page_top a{
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -25px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+p{
+	padding:50px;
+}
+
+.copyright{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.hutomozi{
+    font-weight: bolder;
+}
+
+.akamozi{
+    color: red;
+    font-weight: bolder;
+}
+
+.aomozi{
+    color: blue;
+    font-weight: bolder;
+}
+
+.koumoku{
+	text-decoration: underline;
+	text-decoration-color:#FF6600;
+	/*color: #00ff7f;*/
+	font-weight: bolder;
+}
+
+.setumei_img{
+	display: inline-block;
+  vertical-align: top;
+}
+
+.mokuzi{
+  text-decoration: underline;
+  text-decoration-color:#FF6600;
+  position: relative; top: 10px;
+  padding-left: 100px;
+  padding-top: 30px;
+  font-size: 120%;
+  font-weight: bolder;
+}
+
+.itiran a{
+	/*padding-top:5px;
+	position: relative; top: 10px;*/
+	text-decoration: none;
+}
+/*
+.itiran a:visited{
+  color: #000;
+}
+*/
+.itiran a:hover{
+	color: red;
+}
+
+.itiran{
+	/*position: relative; top: 10px;*/
+	/*padding-bottom: 5px;*/
+  padding-left: 100px;
+}
+
+html, body {
+  scroll-padding-top: 70px;
+}
+
+.Quiz_title{
+	text-decoration: underline;
+	text-decoration-color:#FF6600;
+  /*position: relative; top: 10px;*/
+	padding-left: 100px;
+  padding-top: 30px;
+	padding-bottom: 5px;
+	font-size: 120%;
+	font-weight: bolder;
+}
+
+.mondai{
+	padding-top:5px;
+	position: relative; top: 15px;
+	padding-left: 100px;
+	padding-right: 100px;
+	line-height: 28px;
+}
+
+.answer{
+	padding-top: 5px;
+	position: relative; top: 15px;
+	padding-left: 50px;
+	padding-right: 100px;
+	line-height: 28px;
+}
+
+/*ボタン全体*/
+.hidden_box {
+    margin-bottom: 2em 0; /*前後の余白*/
+		padding-top: 10px;
+    padding-left: 100px;
+		padding-bottom: 70px;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    border: solid 2px black;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
